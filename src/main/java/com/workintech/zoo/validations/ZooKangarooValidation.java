@@ -13,7 +13,6 @@ public class ZooKangarooValidation {
             throw new ZooException("Id is not valid: " + id, HttpStatus.BAD_REQUEST);
         }
     }
-
     public static void checkKangarooExistence(Map<Integer, Kangaroo> kangaroos, Integer id, boolean existence) {
         if (existence) {
             if (!kangaroos.containsKey(id)) {
